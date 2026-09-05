@@ -1,15 +1,15 @@
-# macOS
-.DS_Store
-
 # Python
-__pycache__/
-*.pyc
-.venv/
 venv/
-.env
-
-# Jupyter
+.venv/
+__pycache__/
+*.py[cod]
 .ipynb_checkpoints/
 
-# Misc
-*.log
+# Secrets
+.env
+*.key
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
