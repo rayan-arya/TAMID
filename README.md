@@ -4,7 +4,7 @@ Quantitative work from my time as a **Quantitative Analyst with the TAMID Group*
 
 ---
 
-## `CTC/` — Cornell Trading Competition bot
+## `CTC/`: Cornell Trading Competition bot
 
 A market-making bot that trades against the competition's REST exchange API.
 
@@ -21,7 +21,7 @@ export CTC_API_KEY=...
 python CTC/bot.py --symbol AAPL --qty 10
 ```
 
-## `SemesterProj2025/` — probability cone strategy
+## `SemesterProj2025/`: probability cone strategy
 
 A volatility-band strategy and its backtest. For a given reference date, it estimates annualized volatility from a trailing window of returns and projects upper and lower price bands out over a horizon:
 
@@ -31,7 +31,7 @@ band = P0 * exp( ± k * sigma * sqrt(t / 252) )
 
 The backtest walks the series day by day, opens and closes positions as price crosses the cone, and records the trades. Parameterized on window length and the sigma multiplier `k`, so both can be swept. Results push out to Excel through `xlwings` for the parts of the analysis that live in a spreadsheet.
 
-## `hw0&1/`, `HW02/` — coursework
+## `hw0&1/`, `HW02/`: coursework
 
 Chapter exercises from the TAMID quantitative track. `HW02` is the options work: Black-Scholes pricing and the full Greek set written out from the calculus rather than imported, plus an implied-volatility solver using Newton-Raphson with vega as the derivative, guarded against near-zero and NaN vega and clamped to a sane sigma range.
 
